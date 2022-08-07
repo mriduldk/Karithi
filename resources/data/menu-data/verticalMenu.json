@@ -1,0 +1,92 @@
+{
+  "menu": [
+    {
+      "name": "Schools",
+      "icon": "home",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "kharithiHome",
+          "name": "All",
+          "icon": "circle",
+          "slug": "kharithiHome"
+        },
+        {
+          "url": "primarySchool",
+          "name": "Primary",
+          "icon": "circle",
+          "slug": "primary"
+        },
+        {
+          "url": "lowerPrimarySchool",
+          "name": "Lower Primary",
+          "icon": "circle",
+          "slug": "lowerPrimarySchool"
+        },
+        {
+          "url": "upperPrimarySchool",
+          "name": "Upper Primary",
+          "icon": "circle",
+          "slug": "upperPrimarySchool"
+        },
+        {
+          "url": "higherSecondarySchool",
+          "name": "Higher Secondary",
+          "icon": "circle",
+          "slug": "higherSecondarySchool"
+        }
+      ]
+    },
+
+    {
+      "navheader": "Districts",
+      "slug": ""
+    },
+    {
+      "url": "kokrajhar",
+      "name": "Kokrajhar",
+      "icon": "folder",
+      "slug": "kokrajhar"
+    },
+    {
+      "url": "chirang",
+      "name": "Chirang",
+      "icon": "folder",
+      "slug": "chirang"
+    },
+    {
+      "url": "baksa",
+      "name": "Baksa",
+      "icon": "folder",
+      "slug": "baksa"
+    },
+    {
+      "url": "tamulpur",
+      "name": "Tamulpur",
+      "icon": "folder",
+      "slug": "tamulpur"
+    },
+    {
+      "url": "udalguri",
+      "name": "Udalguri",
+      "icon": "folder",
+      "slug": "udalguri"
+    },
+    {
+      "navheader": "Extra",
+      "slug": ""
+    },
+    {
+      "url": "app/chat",
+      "name": "FAQ",
+      "icon": "message-square",
+      "slug": "app-chat"
+    },
+    {
+      "url": "app/todo",
+      "name": "Contact Us",
+      "icon": "phone",
+      "slug": "app-todo"
+    }
+  ]
+}
