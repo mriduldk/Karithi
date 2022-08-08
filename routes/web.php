@@ -31,6 +31,7 @@ use App\Http\Controllers\KnowYourSchoolController;
 
 
 Route::get('kharithiHome', [KharithiController::class, 'kharithiHome'])->name('kharithiHome');
+Route::get('/', [KharithiController::class, 'home'])->name('home');
 
 Route::get('knowYourSchool', [KnowYourSchoolController::class, 'knowYourSchool']);
 Route::get('searchSchoolTable', [KnowYourSchoolController::class, 'show']);
@@ -54,7 +55,7 @@ Route::get('higherSecondarySchool', [KnowYourSchoolController::class, 'higherSec
 
 
 // Main Page Route
-Route::get('/', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard-ecommerce');
+//Route::get('/', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard-ecommerce');
 
 
 /* Route Dashboards */

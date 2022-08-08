@@ -10,4 +10,9 @@ class KharithiController extends Controller
     {
         return view('/btr/karithi');
     }
+
+    public function home()
+    {
+        return view('/btr/karithi');
+    }
 }

@@ -6,11 +6,13 @@
 <!-- vendor css files -->
 <link rel="stylesheet" href="{{ asset(mix('vendors/css/charts/apexcharts.css')) }}">
 <link rel="stylesheet" href="{{ asset(mix('vendors/css/pickers/flatpickr/flatpickr.min.css')) }}">
+
 @endsection
 
 @section('page-style')
 <link rel="stylesheet" href="{{ asset(mix('css/base/plugins/forms/pickers/form-flat-pickr.css')) }}">
 <link rel="stylesheet" href="{{ asset(mix('css/base/plugins/charts/chart-apex.css')) }}">
+
 @endsection
 
 @section('content')
@@ -144,43 +146,52 @@
                 <!-- Column Chart Ends -->
 
                 <!-- Polar Area Chart Starts -->
-                <div class="col-lg-12 col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Medium</h4>
-                            <div class="dropdown">
-                                <i data-feather="more-vertical" class="cursor-pointer" role="button" id="heat-chart-dd"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                </i>
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="heat-chart-dd">
-                                    <a class="dropdown-item" href="#">Last 28 Days</a>
-                                    <a class="dropdown-item" href="#">Last Month</a>
-                                    <a class="dropdown-item" href="#">Last Year</a>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 align-items-stretch">
+                        <div class="card">
+                            <div class="card-header">
+                                <div>
+                                    <h4 class="card-title">Medium Ratio</h4>
+                                    <span class="card-subtitle text-muted">No of schools Medium Wise</span>
                                 </div>
                             </div>
+                            <div class="card-body">
+                                <canvas class="polar-area-chart-ex chartjs" data-height="350"></canvas>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <canvas class="polar-area-chart-ex chartjs" data-height="350"></canvas>
+                    </div>
+
+                    <div class="col-12 col-md-6 align-items-stretch">
+                        <div class="card">
+                            <div class="card-header">
+                                <div>
+                                    <h4 class="card-title">Category Ratio</h4>
+                                    <span class="card-subtitle text-muted">No of Students Category Wise</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="radialbar-chart" ></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Polar Area Chart Ends-->
 
 
-                <div class="col-lg-12 col-12">
+                <div class="col-lg-3 col-12">
                     <div class="row match-height">
                         <!-- Sales Line Chart Card -->
                         <div class="col-12 col-md-12 col-lg-12">
                             <div class="card">
                                 <div class="card-header align-items-start">
                                     <div>
-                                        <h4 class="card-title mb-25">Sales</h4>
+                                        <h4 class="card-title mb-25">Bodo</h4>
                                         <p class="card-text mb-0">2020 Total Sales: 12.84k</p>
                                     </div>
                                     <i data-feather="settings" class="font-medium-3 text-muted cursor-pointer"></i>
                                 </div>
                                 <div class="card-body pb-0">
-                                    <div id="sales-line-chart"></div>
+                                    <div id="sales-line-chart-bodo"></div>
                                 </div>
                             </div>
                         </div>
@@ -188,11 +199,91 @@
                     </div>
                 </div>
 
+                <div class="col-lg-3 col-12">
+                    <div class="row match-height">
+                        <!-- Sales Line Chart Card -->
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-header align-items-start">
+                                    <div>
+                                        <h4 class="card-title mb-25">Assamese</h4>
+                                        <p class="card-text mb-0">2020 Total Sales: 12.84k</p>
+                                    </div>
+                                    <i data-feather="settings" class="font-medium-3 text-muted cursor-pointer"></i>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <div id="sales-line-chart-assamese"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Sales Line Chart Card -->
+                    </div>
+                </div>
 
-                <!-- Apex charts section end -->
+                <div class="col-lg-3 col-12">
+                    <div class="row match-height">
+                        <!-- Sales Line Chart Card -->
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-header align-items-start">
+                                    <div>
+                                        <h4 class="card-title mb-25">Bengali</h4>
+                                        <p class="card-text mb-0">2020 Total Sales: 12.84k</p>
+                                    </div>
+                                    <i data-feather="settings" class="font-medium-3 text-muted cursor-pointer"></i>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <div id="sales-line-chart-bengali"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Sales Line Chart Card -->
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-12">
+                    <div class="row match-height">
+                        <!-- Sales Line Chart Card -->
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-header align-items-start">
+                                    <div>
+                                        <h4 class="card-title mb-25">Hindi</h4>
+                                        <p class="card-text mb-0">2020 Total Sales: 12.84k</p>
+                                    </div>
+                                    <i data-feather="settings" class="font-medium-3 text-muted cursor-pointer"></i>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <div id="sales-line-chart-hindi"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Sales Line Chart Card -->
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div>
+                                <h4 class="card-title">Statistics</h4>
+                                <span class="card-subtitle text-muted">Commercial networks and enterprises</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <canvas class="line-chart-ex chartjs" data-height="250"></canvas>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </section>
+
+        <div class="row">
+
+
+        </div>
 
     </div>
 
@@ -201,33 +292,27 @@
 
 </section>
 
-<script>
-
-</script>
-
-
 @endsection
 
 @section('vendor-script')
 <!-- vendor files -->
 <script src="{{ asset(mix('vendors/js/charts/apexcharts.min.js')) }}"></script>
 <script src="{{ asset(mix('vendors/js/pickers/flatpickr/flatpickr.min.js')) }}"></script>
+<script src="{{ asset(mix('vendors/js/charts/chart.min.js')) }}"></script>
+<script src="{{ asset(mix('vendors/js/pickers/flatpickr/flatpickr.min.js')) }}"></script>
+
 @endsection
 
 @section('page-script')
 <!-- Page js files -->
 <!-- <script src="{{ asset(mix('js/scripts/charts/chart-apex.js')) }}"></script> -->
 <script src="{{ asset(mix('js/scripts/charts/karithi.js')) }}"></script>
-<script
+<!-- <script
     src="https://pixinvent.com/demo/vuexy-bootstrap-laravel-admin-template/demo-1/js/scripts/cards/card-analytics.js?id=ead6f2040d41b5dbf6af">
-</script>
+</script> -->
 
-<!-- <script src="{{ asset(mix('js/scripts/charts/chart-apex.js')) }}"></script> -->
+<script src="{{ asset(mix('js/scripts/charts/chart-apex.js')) }}"></script>
 <script src="{{ asset(mix('js/scripts/charts/chart-chartjs.js')) }}"></script>
-
-<script
-    src="https://pixinvent.com/demo/vuexy-bootstrap-laravel-admin-template/demo-1/js/scripts/cards/card-analytics.js?id=ead6f2040d41b5dbf6af">
-</script>
 <script src="{{ asset(mix('js/scripts/cards/card-analytics.js')) }}"></script>
 
 @endsection

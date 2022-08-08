@@ -429,7 +429,7 @@ $(window).on('load', function () {
         labels: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140],
         datasets: [
           {
-            data: [80, 150, 180, 270, 210, 160, 160, 202, 265, 210, 270, 255, 290, 360, 375],
+            data: [80, 150, 180, 270, 300, 350, 450, 500, 505, 520, 530, 555, 590, 600, 691],
             label: 'Europe',
             borderColor: lineChartDanger,
             lineTension: 0.5,
@@ -448,7 +448,7 @@ $(window).on('load', function () {
             pointShadowColor: tooltipShadow
           },
           {
-            data: [80, 125, 105, 130, 215, 195, 140, 160, 230, 300, 220, 170, 210, 200, 280],
+            data: [80, 150, 180, 270, 300, 350, 450, 500, 505, 520, 530, 555, 590, 600, 691],
             label: 'Asia',
             borderColor: lineChartPrimary,
             lineTension: 0.5,
@@ -467,7 +467,7 @@ $(window).on('load', function () {
             pointShadowColor: tooltipShadow
           },
           {
-            data: [80, 99, 82, 90, 115, 115, 74, 75, 130, 155, 125, 90, 140, 130, 180],
+            data: [80, 150, 180, 270, 300, 350, 450, 500, 505, 520, 530, 555, 590, 600, 691],
             label: 'Africa',
             borderColor: warningColorShade,
             lineTension: 0.5,

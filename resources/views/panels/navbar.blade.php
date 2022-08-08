@@ -8,7 +8,6 @@
         </ul>
 
 
-
         <ul class="nav navbar-nav align-items-center ms-auto">
             <li class="nav-item"><a class="nav-link dropdown-toggle" href="{{ url('knowYourSchool') }}"> <span class="btn btn-danger">
                 <svg
@@ -20,7 +19,8 @@
                 </svg> One Click Information (OCI)</span></a></li>
             <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon"
                         data-feather="moon"></i></a></li>
-
         </ul>
+        
+
     </div>
 </nav>

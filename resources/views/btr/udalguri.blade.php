@@ -51,7 +51,7 @@
                     <h4 class="card-title">Udalguri District Map</h4>
                 </div>
                 <div class="card-body">
-                    <div class="leaflet-map" id="geojson"></div>
+                    <div class="leaflet-map" id="geojson-udalguri"></div>
                 </div>
             </div>
         </div>
